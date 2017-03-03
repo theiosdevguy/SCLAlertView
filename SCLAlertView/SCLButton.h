@@ -93,6 +93,8 @@ typedef NS_ENUM(NSInteger, SCLActionType)
  */
 @property (nonatomic) SCLTimerDisplay *timer;
 
+@property (nonatomic) BOOL disableViewHide;
+
 /** Init method
  *
  */
