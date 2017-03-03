@@ -24,7 +24,7 @@
 #define KEYBOARD_HEIGHT 80
 #define PREDICTION_BAR_HEIGHT 40
 #define ADD_BUTTON_PADDING 10.0f
-#define DEFAULT_WINDOW_WIDTH 240
+#define DEFAULT_WINDOW_WIDTH 280
 
 @interface SCLAlertView ()  <UITextFieldDelegate, UIGestureRecognizerDelegate>
 
@@ -794,7 +794,7 @@ SCLTimerDisplay *buttonTimer;
         NSLog(@"Unknown action type for button");
     }
     
-    if([self isVisible])
+    if([self isVisible] && !btn.disableViewHide)
     {
         [self hideView];
     }
